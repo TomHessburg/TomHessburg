@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="mb-16">
-      <h1 className="text-5xl md:text-6xl leading-tight md:leading-tight font-black">
+      <h1 className="text-5xl lg:text-6xl leading-tight lg:leading-tight font-black">
         Hey, I'm
         <br />
         Tom Hessburg<span className="text-brand">.</span>
