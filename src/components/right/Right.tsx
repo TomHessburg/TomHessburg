@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Right() {
   return (
-    <div className="w-full md:w-1/2 flex flex-wrap items-center justify-start md:justify-end mb-12 relative md:sticky md:top-20 md:right-0 z-10">
+    <div className="w-full md:w-1/2 flex flex-wrap items-center justify-start md:justify-end mb-6 relative md:sticky md:top-12 md:right-0 z-10">
       <Link text="WORK" label="01" />
       <Link text="PROJECTS" label="02" />
       <Link text="EDUCATION" label="03" />
