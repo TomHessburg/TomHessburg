@@ -22,7 +22,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body
-          className="bg-midnightBlack text-white p-10 min-h-screen"
+          className="bg-midnightBlack text-white min-h-screen"
           id="app-root"
         >
           <Main />

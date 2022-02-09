@@ -1,9 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Left from "../components/left/Left";
+import Right from "../components/right/Right";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div id="homescreen">
       <Head>
         <title>Hey, I'm Tom Hessburg.</title>
         <meta
@@ -12,8 +14,13 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-full h-full">
-        <p className="text-2xl font-bold">Hi there</p>
+      <div className="w-full h-full relative flex items-start justify-center flex-col-reverse md:flex-row p-10 md:p-20">
+        <Left />
+        <Right />
+        <img
+          src="/shape.png"
+          className="w-[650px] h-auto fixed top-[calc(100vh_-_600px)] right-0 z-0"
+        />
       </div>
     </div>
   );
