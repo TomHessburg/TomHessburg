@@ -1,4 +1,6 @@
+import Education from "./Education";
 import Hero from "./Hero";
+import Misc from "./misc/Misc";
 import Projects from "./Projects";
 import Work from "./Work";
 
@@ -8,6 +10,8 @@ export default function Left() {
       <Hero />
       <Work />
       <Projects />
+      <Education />
+      <Misc />
     </div>
   );
 }
