@@ -16,6 +16,10 @@ const Link = ({ text, label }: { text: string; label: string }) => {
 
   return (
     <div
+      onClick={() => {
+        const el = document.getElementById(text.toLowerCase());
+        el?.scrollIntoView({ behavior: "smooth" });
+      }}
       onMouseEnter={() => setSelected(true)}
       onMouseLeave={() => setSelected(false)}
       className="flex items-center justify-center text-sm lg:text-base font-light ml-6 mb-2 cursor-pointer"

@@ -19,7 +19,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="mb-16">
+    <section className="mb-16" id="projects">
       <h2 className="font-bold text-3xl mb-6">Projects</h2>
 
       {/* SkillSpace */}

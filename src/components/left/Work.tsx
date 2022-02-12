@@ -2,7 +2,7 @@ import Card from "../../utilities/Card";
 
 export default function Work() {
   return (
-    <section className="mb-16">
+    <section className="mb-16" id="work">
       <h2 className="font-bold text-3xl mb-6">Work</h2>
 
       {/* SkillSpace */}
