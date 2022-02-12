@@ -1,4 +1,5 @@
 import Card from "../../utilities/Card";
+import { useState } from "react";
 
 export default function Projects() {
   const renderTags = (tech: string[]) => {
@@ -24,7 +25,18 @@ export default function Projects() {
 
       {/* SkillSpace */}
       <Card>
-        <h3 className="font-bold text-2xl mb-6">SkillSpace</h3>
+        <div className="flex items-center justify-between mb-6">
+          <h3 className="font-bold text-2xl">SkillSpace</h3>
+          <div>
+            <a
+              href="https://www.skillspace.build/"
+              target="_blank"
+              className="text-brand font-semibold hover:underline"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
         <p className="font-light leading-7 mb-6">
           My brother Frank and I have been running SkillSpace since late 2020.
           Many fields in construction (for instance drywall and roofing) do not
@@ -43,10 +55,11 @@ export default function Projects() {
           "Firebase",
           "Serverless",
         ])}
-        <div className="mt-6">
-          <a href="#" target="_blank" className="text-brand text-sm underline">
-            More Details
-          </a>
+        <div className="mt-6 flex justify-center">
+          <video width="300" height="auto" controls>
+            <source src="/skillspace/preview.mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </Card>
 
@@ -57,7 +70,8 @@ export default function Projects() {
           Crewly is a project I built for a large roofing company in Apopka,
           Florida. It's project management software, helping this company to
           plan and execute thousands of projects per year, and saving tens of
-          hours per week for their employees.
+          hours per week for their employees. If you're interested in checking
+          it out, contact me for access.
         </p>
         {renderTags([
           "React (CRA)",
@@ -68,10 +82,11 @@ export default function Projects() {
           "Heroku",
           "Web Sockets",
         ])}
-        <div className="mt-6">
-          <a href="#" target="_blank" className="text-brand text-sm underline">
-            More Details
-          </a>
+        <div className="mt-6 flex justify-center">
+          <video width="100%" height="auto" controls>
+            <source src="/crewly/preview.mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </Card>
 
