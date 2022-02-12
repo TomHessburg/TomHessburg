@@ -1,5 +1,5 @@
 import Contributions from "./Contributions";
-import About from "./About";
+import Contact from "./Contact";
 import Music from "./Music";
 import Tech from "./Tech";
 
@@ -8,7 +8,7 @@ export default function Misc() {
     <section>
       <h2 className="font-bold text-3xl mb-6">Misc</h2>
 
-      <About />
+      <Contact />
       <Tech />
       <Contributions />
       <Music />
