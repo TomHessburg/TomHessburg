@@ -1,4 +1,4 @@
-import Links from "../right/Links";
+import Links from "./Links";
 
 export default function Hero() {
   return (
