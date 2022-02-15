@@ -1,5 +1,4 @@
 import Card from "../../utilities/Card";
-import { useState } from "react";
 
 export default function Projects() {
   const renderTags = (tech: string[]) => {
@@ -21,7 +20,7 @@ export default function Projects() {
 
   return (
     <section className="mb-16" id="projects">
-      <h2 className="font-bold text-3xl mb-6">Projects</h2>
+      <h2 className="font-bold text-3xl mb-2">Projects</h2>
 
       {/* SkillSpace */}
       <Card>

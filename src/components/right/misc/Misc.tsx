@@ -6,7 +6,7 @@ import Tech from "./Tech";
 export default function Misc() {
   return (
     <section id="misc">
-      <h2 className="font-bold text-3xl mb-6">Misc</h2>
+      <h2 className="font-bold text-3xl mb-2">Misc</h2>
 
       <Contact />
       <Tech />

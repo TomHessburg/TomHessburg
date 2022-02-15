@@ -4,10 +4,6 @@ import { motion } from "framer-motion";
 const Card: React.FC<{}> = ({ children }) => {
   return (
     <motion.div
-      // whileHover={{
-      //   scale: 1.03,
-      //   transition: { duration: 0.25 },
-      // }}
       initial="hidden"
       whileInView="visible"
       transition={{ duration: 0.5 }}
