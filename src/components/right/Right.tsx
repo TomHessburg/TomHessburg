@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Right() {
   return (
     <div className="w-full lg:w-1/2 ">
-      <div className="w-full flex flex-wrap items-center justify-end mb-6 relative lg:sticky lg:top-12 lg:right-0 z-10">
+      <div className="w-full flex flex-wrap items-center justify-end mb-6 relative lg:fixed lg:top-12 lg:right-12 z-10">
         <Link text="WORK" label="01" />
         <Link text="PROJECTS" label="02" />
         <Link text="EDUCATION" label="03" />

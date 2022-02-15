@@ -18,10 +18,6 @@ const Home: NextPage = () => {
       <div className="w-full h-full relative flex items-start justify-center flex-col-reverse lg:flex-row p-6 lg:p-12">
         <Left />
         <Right />
-        {/* <img
-          src="/astronaut.png"
-          className="w-[100px] h-auto fixed -bottom-[150px] -right-[150px] z-0 filter sepia"
-        /> */}
       </div>
       <Stars />
     </div>

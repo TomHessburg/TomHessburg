@@ -59,9 +59,10 @@ const Star = ({
   const { scrollY } = useViewportScroll();
   const y = useTransform(scrollY, scrollPos, scrollParams);
 
-  const getRandValue = (max: number) => Math.floor(Math.random() * max);
+  const getRandValue = (max: number, min: number = 0) =>
+    Math.floor(Math.random() * (max - min) + min);
 
-  const widthHeight = getRandValue(8);
+  const widthHeight = getRandValue(6, 1);
 
   return (
     <motion.div
@@ -69,7 +70,6 @@ const Star = ({
       style={{
         y,
         animationDuration: `${getRandValue(10)}s`,
-        opacity: getRandValue(100),
         width: widthHeight,
         height: widthHeight,
       }}
