@@ -15,11 +15,11 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-full h-full relative flex items-start justify-center flex-col-reverse lg:flex-row p-6 lg:p-12">
+      <Stars />
+      <div className="w-full h-full relative p-6 gap-6 lg:gap-16 lg:p-16 grid grid-cols-1 lg:grid-cols-2">
         <Left />
         <Right />
       </div>
-      <Stars />
     </div>
   );
 };

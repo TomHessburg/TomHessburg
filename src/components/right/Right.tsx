@@ -1,50 +1,18 @@
-import { useState } from "react";
+import Education from "../left/Education";
+import Misc from "../left/misc/Misc";
+import Projects from "../left/Projects";
+import Work from "../left/Work";
 
 export default function Right() {
   return (
-    <div className="w-full lg:w-1/2 ">
-      <div className="w-full flex flex-wrap items-center justify-end mb-6 relative lg:fixed lg:top-12 lg:right-12 z-10">
-        <Link text="WORK" label="01" />
-        <Link text="PROJECTS" label="02" />
-        <Link text="EDUCATION" label="03" />
-        <Link text="MISC" label="04" />
-      </div>
+    <div className="grid-span-1">
+      {/* <div className="w-full flex flex-wrap items-center justify-end mb-6 relative lg:fixed lg:top-12 lg:right-12 z-10"> */}
+      {/* <Links /> */}
+      {/* </div> */}
+      <Work />
+      <Projects />
+      <Education />
+      <Misc />
     </div>
   );
 }
-
-const Link = ({ text, label }: { text: string; label: string }) => {
-  const [selected, setSelected] = useState(false);
-
-  return (
-    <div
-      onClick={() => {
-        const el = document.getElementById(text.toLowerCase());
-        el?.scrollIntoView({ behavior: "smooth" });
-      }}
-      onMouseEnter={() => setSelected(true)}
-      onMouseLeave={() => setSelected(false)}
-      className="flex items-center justify-center text-sm lg:text-base font-light ml-6 mb-2 cursor-pointer"
-    >
-      <span
-        className={`transition-colors ${
-          selected ? "text-brand" : "text-white"
-        }`}
-      >
-        {label}
-      </span>
-      <div
-        className={`w-[12px] lg:w-[20px] h-[1px] mx-1 transition-colors ${
-          selected ? "bg-brand" : "bg-white"
-        }`}
-      />
-      <span
-        className={`transition-colors ${
-          selected ? "text-brand" : "text-white"
-        }`}
-      >
-        {text.toUpperCase()}
-      </span>
-    </div>
-  );
-};

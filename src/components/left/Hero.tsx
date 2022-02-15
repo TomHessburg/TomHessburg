@@ -1,6 +1,8 @@
+import Links from "../right/Links";
+
 export default function Hero() {
   return (
-    <div className="mb-16">
+    <div className="mb-6 sticky top-16 mt-6 lg:mt-0">
       <h1 className="text-5xl lg:text-6xl leading-tight lg:leading-tight font-black">
         Hey, I'm
         <br />
@@ -62,6 +64,7 @@ export default function Hero() {
         </a>
         .
       </p>
+      <Links />
     </div>
   );
 }

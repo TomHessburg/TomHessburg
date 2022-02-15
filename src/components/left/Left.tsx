@@ -1,17 +1,9 @@
-import Education from "./Education";
 import Hero from "./Hero";
-import Misc from "./misc/Misc";
-import Projects from "./Projects";
-import Work from "./Work";
 
 export default function Left() {
   return (
-    <div className="w-full lg:w-1/2 relative z-10">
+    <div className="grid-span-1 z-10 relative">
       <Hero />
-      <Work />
-      <Projects />
-      <Education />
-      <Misc />
     </div>
   );
 }
