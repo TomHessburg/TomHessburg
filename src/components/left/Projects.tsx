@@ -108,10 +108,11 @@ export default function Projects() {
           "Express",
           "Web Audio",
         ])}
-        <div className="mt-6">
-          <a href="#" target="_blank" className="text-brand text-sm underline">
-            More Details
-          </a>
+        <div className="mt-6 flex justify-center">
+          <video width="100%" height="auto" controls>
+            <source src="/wips/preview.mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </Card>
     </section>
