@@ -1,11 +1,12 @@
+import Right from "../components/right/Right";
+import Stars from "../components/stars/Stars";
+import Left from "../components/left/Left";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Left from "../components/left/Left";
-import Right from "../components/right/Right";
 
 const Home: NextPage = () => {
   return (
-    <div id="homescreen">
+    <div id="homescreen" className="relative">
       <Head>
         <title>Hey, I'm Tom Hessburg.</title>
         <meta
@@ -17,11 +18,12 @@ const Home: NextPage = () => {
       <div className="w-full h-full relative flex items-start justify-center flex-col-reverse lg:flex-row p-6 lg:p-12">
         <Left />
         <Right />
-        <img
-          src="/shape.png"
-          className="w-[650px] h-auto fixed top-[calc(100vh_-_600px)] right-0 z-0"
-        />
+        {/* <img
+          src="/astronaut.png"
+          className="w-[100px] h-auto fixed -bottom-[150px] -right-[150px] z-0 filter sepia"
+        /> */}
       </div>
+      <Stars />
     </div>
   );
 };
