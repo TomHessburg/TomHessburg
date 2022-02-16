@@ -10,6 +10,7 @@ export default function Contributions() {
         <a
           href="https://github.com/TomHessburg"
           target="_blank"
+          rel="noreferrer"
           className="text-brand font-bold hover:underline"
         >
           @TomHessburg

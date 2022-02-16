@@ -42,6 +42,7 @@ export default function Projects({
             <a
               href="https://www.skillspace.build/"
               target="_blank"
+              rel="noreferrer"
               className="text-brand font-semibold hover:underline"
             >
               Visit Website
@@ -79,10 +80,10 @@ export default function Projects({
         <h3 className="font-bold text-2xl mb-6">Crewly</h3>
         <p className="font-light leading-7 mb-6">
           Crewly is a project I built for a large roofing company in Apopka,
-          Florida. It's project management software, helping this company to
-          plan and execute thousands of projects per year, and saving tens of
-          hours per week for their employees. If you're interested in checking
-          it out, contact me for access.
+          Florida. It&apos;s project management software, helping this company
+          to plan and execute thousands of projects per year, and saving tens of
+          hours per week for their employees. If you&apos;re interested in
+          checking it out, contact me for access.
         </p>
         {renderTags([
           "React (CRA)",
@@ -107,8 +108,8 @@ export default function Projects({
         <p className="font-light leading-7 mb-6">
           WIPs is a free royalty-free music library for content creators. Think
           Unsplash for music. I offer thousands of songs and sound effects which
-          I've crafted myself to anyone who needs them for use in the in their
-          content, commercial or otherwise. Paying customers get access to
+          I&apos;ve crafted myself to anyone who needs them for use in the in
+          their content, commercial or otherwise. Paying customers get access to
           additional content, as well as stems and higher quality audio files.
           Set for release mid-2022.
         </p>

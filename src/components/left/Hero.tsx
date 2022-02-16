@@ -1,51 +1,71 @@
 import Links from "./Links";
+import Image from "next/image";
 
 export default function Hero({ section }: { section: string }) {
   return (
     <div className="mb-6 sticky top-[7rem] mt-12">
       <h1 className="text-5xl lg:text-6xl leading-tight lg:leading-tight font-black">
-        Hey, I'm
+        Hey, I&apos;m
         <br />
         Tom Hessburg<span className="text-brand">.</span>
       </h1>
       <div className="flex items-center justify-start my-8">
-        <img
-          onClick={() => {
-            window.open("https://github.com/TomHessburg", "_blank");
-          }}
-          src="/github.svg"
-          className="mr-4 transition-opacity hover:opacity-70 cursor-pointer"
-        />
-        <img
-          onClick={() => {
-            window.open(
-              "https://www.linkedin.com/in/thomas-hessburg/",
-              "_blank"
-            );
-          }}
-          src="/linkedin.svg"
-          className="mr-4 transition-opacity hover:opacity-70 cursor-pointer"
-        />
-        <img
-          onClick={() => {
-            window.open("https://twitter.com/tomhessburg", "_blank");
-          }}
-          src="/twitter.svg"
-          className="mr-4 transition-opacity hover:opacity-70 cursor-pointer"
-        />
-        <img
-          onClick={() => {
-            window.open("mailto:thomas.hessburg@gmail.com");
-          }}
-          src="/google.svg"
-          className="transition-opacity hover:opacity-70 cursor-pointer"
-        />
+        <div className="mr-4 transition-opacity hover:opacity-70 cursor-pointer">
+          <Image
+            width={32}
+            height={32}
+            alt=""
+            onClick={() => {
+              window.open("https://github.com/TomHessburg", "_blank");
+            }}
+            src="/github.svg"
+          />
+        </div>
+        <div className="mr-4 transition-opacity hover:opacity-70 cursor-pointer">
+          <Image
+            width={32}
+            height={32}
+            alt=""
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/thomas-hessburg/",
+                "_blank"
+              );
+            }}
+            src="/linkedin.svg"
+          />
+        </div>
+        <div className="mr-4 transition-opacity hover:opacity-70 cursor-pointer">
+          <Image
+            width={32}
+            height={32}
+            alt=""
+            onClick={() => {
+              window.open("https://twitter.com/tomhessburg", "_blank");
+            }}
+            src="/twitter.svg"
+            className="mr-4 transition-opacity hover:opacity-70 cursor-pointer"
+          />
+        </div>
+        <div className="transition-opacity hover:opacity-70 cursor-pointer">
+          <Image
+            width={32}
+            height={32}
+            alt=""
+            onClick={() => {
+              window.open("mailto:thomas.hessburg@gmail.com");
+            }}
+            src="/google.svg"
+            className="transition-opacity hover:opacity-70 cursor-pointer"
+          />
+        </div>
       </div>
       <p className="font-light leading-7">
-        I'm a software engineer based in Orlando, Florida. I co-founded{" "}
+        I&apos;m a software engineer based in Orlando, Florida. I co-founded{" "}
         <a
           href="https://www.skillspace.build/"
           target="_blank"
+          rel="noreferrer"
           className="font-bold text-brand hover:underline"
         >
           SkillSpace
@@ -58,6 +78,7 @@ export default function Hero({ section }: { section: string }) {
         <a
           href="https://soundcloud.com/baronfields"
           target="_blank"
+          rel="noreferrer"
           className="font-bold text-brand hover:underline"
         >
           Baron Fields

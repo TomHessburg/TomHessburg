@@ -32,6 +32,7 @@ export default function Education({
           <a
             href="https://www.bloomtech.com/"
             target="_blank"
+            rel="noreferrer"
             className="text-brand text-sm underline"
           >
             Website
@@ -42,15 +43,16 @@ export default function Education({
       <Card>
         <h3 className="font-bold text-2xl mb-6">Icon Collective</h3>
         <p className="font-light leading-7 mb-6">
-          Icon Collective is as much of a “family” as it is a “school”. Icon
-          offers courses in music production, management, and singing. I took
-          their 1 year music production course where I learned the in's and
-          out's of audio engineering and production. During my time and Icon, I
-          was able to build a following of thousands around my music, reach
-          millions of plays, and launched an{" "}
+          Icon Collective is as much of a &quot;family&quot; as it is a
+          &quot;school&quot;. Icon offers courses in music production,
+          management, and singing. I took their 1 year music production course
+          where I learned the in&apos;s and out&apos;s of audio engineering and
+          production. During my time and Icon, I was able to build a following
+          of thousands around my music, reach millions of plays, and launched an{" "}
           <a
             href="https://soundcloud.com/adbcrecords"
             target="_blank"
+            rel="noreferrer"
             className="font-bold text-brand hover:underline"
           >
             independent record label
@@ -59,6 +61,7 @@ export default function Education({
           <a
             href="https://soundcloud.com/grrrreatdane"
             target="_blank"
+            rel="noreferrer"
             className="font-bold text-brand hover:underline"
           >
             Great Dane
@@ -70,6 +73,7 @@ export default function Education({
           <a
             href="https://iconcollective.edu/"
             target="_blank"
+            rel="noreferrer"
             className="text-brand text-sm underline"
           >
             Website
@@ -92,6 +96,7 @@ export default function Education({
           <a
             href="https://www.tws.edu/"
             target="_blank"
+            rel="noreferrer"
             className="text-brand text-sm underline"
           >
             Website

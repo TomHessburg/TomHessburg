@@ -26,6 +26,7 @@ export default function Work({
           <a
             href="https://www.skillspace.build/"
             target="_blank"
+            rel="noreferrer"
             className="font-bold text-brand hover:underline"
           >
             SkillSpace
@@ -39,6 +40,7 @@ export default function Work({
           <a
             href="https://www.linkedin.com/in/frank-hessburg-92a96296/"
             target="_blank"
+            rel="noreferrer"
             className="font-bold text-brand hover:underline"
           >
             Frank
@@ -66,6 +68,7 @@ export default function Work({
           <a
             href="https://www.wayfair.com/"
             target="_blank"
+            rel="noreferrer"
             className="font-bold text-brand hover:underline"
           >
             Wayfair
@@ -81,7 +84,7 @@ export default function Work({
           here includes Java, PHP, Python, Spark, React, and more.
         </p>
         <p className="font-light leading-7 mb-4">
-          Some of the projects that I've worked on include:
+          Some of the projects that I&apos;ve worked on include:
         </p>
         <p className="font-light leading-7 mb-4">
           - A suite of tools used by marketing analysts to directly drive
@@ -89,8 +92,8 @@ export default function Work({
           Java, Dropwizard, Python, Vertica, Hive, MSSQL, Presto and more)
         </p>
         <p className="font-light leading-7 mb-4">
-          - "Forge" framework for designing jobs which pipe billions of rows of
-          data daily (Python, Aerospike, Spark, Hive)
+          - &quot;Forge&quot;framework for designing jobs which pipe billions of
+          rows of data daily (Python, Aerospike, Spark, Hive)
         </p>
         <p className="font-light leading-7 mb-4">
           - Custom data analytics user interfaces which allow analysts to track
@@ -98,9 +101,9 @@ export default function Work({
           Dropwizard)
         </p>
         <p className="font-light leading-7">
-          - The "Generic CSV Uploader" API which has cut development time of new
-          CSV upload utilities (we've got many of them) down from a week to day
-          (Java, Dropwizard)
+          - The&quot;Generic CSV Uploader&quot;API which has cut development
+          time of new CSV upload utilities (we&apos;ve got many of them) down
+          from a week to day (Java, Dropwizard)
         </p>
       </Card>
 
@@ -143,6 +146,7 @@ export default function Work({
           <a
             href="https://soundcloud.com/baronfields"
             target="_blank"
+            rel="noreferrer"
             className="font-bold text-brand hover:underline"
           >
             Freelance
@@ -154,14 +158,14 @@ export default function Work({
         {/* CONTENT */}
         <p className="font-light leading-7 mb-4">
           Engineered, mixed, mastered, and released hundreds of songs both for
-          myself and for others, collectively garnering 10's of millions of
+          myself and for others, collectively garnering 10&apos;s of millions of
           listens across SoundCloud, Spotify, Apple Music and other streaming
           platforms.
         </p>
         <p className="font-light leading-7 mb-4">
           Cofounded an independent record label which has garnered millions of
           plays across tens of releases including drops from some of the
-          “underground bass music” scenes biggest names.
+          &quot;underground bass music&quot; scenes biggest names.
         </p>
         <p className="font-light leading-7">
           Performed music live for thousands of people across the US.
@@ -178,6 +182,7 @@ export default function Work({
           <a
             href="https://www.bloomtech.com/"
             target="_blank"
+            rel="noreferrer"
             className="font-bold text-brand hover:underline"
           >
             Lambda School
