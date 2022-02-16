@@ -2,7 +2,7 @@ import Links from "./Links";
 
 export default function Hero({ section }: { section: string }) {
   return (
-    <div className="mb-6 sticky top-[7rem] mt-12">
+    <div className="mb-6 sticky top-[4rem] mt-12 lg:mt-0">
       <h1 className="text-5xl lg:text-6xl leading-tight lg:leading-tight font-black">
         Hey, I&apos;m
         <br />

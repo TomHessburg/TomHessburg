@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Links({ section }: { section: string }) {
   return (
-    <div className="flex flex-wrap items-center justify-start mt-12">
+    <div className="flex flex-wrap items-center justify-start mt-6">
       <Link text="WORK" label="01" inView={section === "work"} />
       <Link text="PROJECTS" label="02" inView={section === "projects"} />
       <Link text="EDUCATION" label="03" inView={section === "education"} />

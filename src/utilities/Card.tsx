@@ -12,7 +12,7 @@ const Card: React.FC<{}> = ({ children }) => {
         visible: { opacity: 1, y: 0, scale: 1 },
         hidden: { opacity: 0, y: 50, scale: 0.8 },
       }}
-      className="w-full bg-dusty/70 backdrop-blur p-6 mb-6"
+      className="w-full bg-dusty/50 backdrop-blur p-6 mb-6"
     >
       {children}
     </motion.div>
