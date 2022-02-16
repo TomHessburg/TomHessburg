@@ -20,7 +20,7 @@ export default function Work({
       {/* SkillSpace */}
       <Card>
         {/* TITLE */}
-        <h3 className="font-bold text-2xl">Co-Founder/Software Developer</h3>
+        <h3 className="font-bold text-2xl">Software Developer (Co-Founder)</h3>
         {/* INFO */}
         <p className="font-light text-white/80">
           <a
