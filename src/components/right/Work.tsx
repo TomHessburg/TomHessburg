@@ -1,8 +1,20 @@
+import { Dispatch, SetStateAction, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Card from "../../utilities/Card";
 
-export default function Work() {
+export default function Work({
+  setSection,
+}: {
+  setSection: Dispatch<SetStateAction<string>>;
+}) {
+  const [ref, inView] = useInView({});
+
+  useEffect(() => {
+    inView && setSection("work");
+  }, [inView]);
+
   return (
-    <section className="mb-16" id="work">
+    <section ref={ref} className="mb-16" id="work">
       <h2 className="font-bold text-3xl mb-2">Work</h2>
 
       {/* SkillSpace */}

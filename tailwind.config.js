@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         midnightBlack: "#0D0D0D",
         dusty: "#181818",
-        brand: "#cf1d5b",
+        brand: "#524fe3",
       },
       fontFamily: {
         sans: ["Gothic A1", ...defaultTheme.fontFamily.sans],

@@ -1,6 +1,6 @@
 import Links from "./Links";
 
-export default function Hero() {
+export default function Hero({ section }: { section: string }) {
   return (
     <div className="mb-6 sticky top-[7rem] mt-12">
       <h1 className="text-5xl lg:text-6xl leading-tight lg:leading-tight font-black">
@@ -64,7 +64,7 @@ export default function Hero() {
         </a>
         .
       </p>
-      <Links />
+      <Links section={section} />
     </div>
   );
 }

@@ -1,6 +1,18 @@
+import { Dispatch, SetStateAction, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Card from "../../utilities/Card";
 
-export default function Projects() {
+export default function Projects({
+  setSection,
+}: {
+  setSection: Dispatch<SetStateAction<string>>;
+}) {
+  const [ref, inView] = useInView({});
+
+  useEffect(() => {
+    inView && setSection("projects");
+  }, [inView]);
+
   const renderTags = (tech: string[]) => {
     return (
       <div className="flex flex-wrap items-center justify-start -mb-2">
@@ -19,7 +31,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="mb-16" id="projects">
+    <section ref={ref} className="mb-16" id="projects">
       <h2 className="font-bold text-3xl mb-2">Projects</h2>
 
       {/* SkillSpace */}

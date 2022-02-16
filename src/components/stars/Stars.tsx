@@ -1,8 +1,9 @@
 import { useViewportScroll, motion, useTransform } from "framer-motion";
+import React from "react";
 
 const NUM_STARS = 100;
 
-export default function Stars() {
+function Stars() {
   const generateStars = () => {
     const stars = [];
     for (let i = 0; i < NUM_STARS; i++) {
@@ -49,6 +50,10 @@ export default function Stars() {
     </div>
   );
 }
+
+export default React.memo(Stars, () => {
+  return true;
+});
 
 const Star = ({
   scrollPos = [0, 8250],
