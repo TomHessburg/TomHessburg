@@ -64,7 +64,7 @@ const Star = ({
   const { scrollY } = useViewportScroll();
   const y = useTransform(scrollY, scrollPos, scrollParams);
 
-  const getRandValue = (max: number, min: number = 0) =>
+  const getRandValue = (max: number, min = 0) =>
     Math.floor(Math.random() * (max - min) + min);
 
   const widthHeight = getRandValue(6, 1);
