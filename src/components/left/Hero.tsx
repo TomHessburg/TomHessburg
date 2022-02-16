@@ -1,5 +1,4 @@
 import Links from "./Links";
-import Image from "next/image";
 
 export default function Hero({ section }: { section: string }) {
   return (
@@ -11,9 +10,7 @@ export default function Hero({ section }: { section: string }) {
       </h1>
       <div className="flex items-center justify-start my-8">
         <div className="mr-4 transition-opacity hover:opacity-70 cursor-pointer">
-          <Image
-            width={32}
-            height={32}
+          <img
             alt=""
             onClick={() => {
               window.open("https://github.com/TomHessburg", "_blank");
@@ -22,9 +19,7 @@ export default function Hero({ section }: { section: string }) {
           />
         </div>
         <div className="mr-4 transition-opacity hover:opacity-70 cursor-pointer">
-          <Image
-            width={32}
-            height={32}
+          <img
             alt=""
             onClick={() => {
               window.open(
@@ -36,21 +31,16 @@ export default function Hero({ section }: { section: string }) {
           />
         </div>
         <div className="mr-4 transition-opacity hover:opacity-70 cursor-pointer">
-          <Image
-            width={32}
-            height={32}
+          <img
             alt=""
             onClick={() => {
               window.open("https://twitter.com/tomhessburg", "_blank");
             }}
             src="/twitter.svg"
-            className="mr-4 transition-opacity hover:opacity-70 cursor-pointer"
           />
         </div>
         <div className="transition-opacity hover:opacity-70 cursor-pointer">
-          <Image
-            width={32}
-            height={32}
+          <img
             alt=""
             onClick={() => {
               window.open("mailto:thomas.hessburg@gmail.com");

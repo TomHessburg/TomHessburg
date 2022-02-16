@@ -1,6 +1,7 @@
 import { Dispatch, SetStateAction, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import Card from "../../utilities/Card";
+import { useState } from "react";
 
 export default function Projects({
   setSection,
@@ -8,6 +9,10 @@ export default function Projects({
   setSection: Dispatch<SetStateAction<string>>;
 }) {
   const [ref, inView] = useInView({});
+
+  const [vidOne, setVidOne] = useState(false);
+  const [vidTwo, setVidTwo] = useState(false);
+  const [vidThree, setVidThree] = useState(false);
 
   useEffect(() => {
     inView && setSection("projects");
@@ -67,11 +72,25 @@ export default function Projects({
           "Firebase",
           "Serverless",
         ])}
-        <div className="mt-6 flex justify-center">
-          {/* <video preload="metadata" width="300" height="auto" controls>
-            <source src="/skillspace/preview.mp4" />
-            Your browser does not support the video tag.
-          </video> */}
+        <div className="mt-6 flex flex-col items-center">
+          <button
+            onClick={() => setVidOne((pv) => !pv)}
+            className="bg-brand hover:bg-brand/90 transition-colors px-4 py-2 w-full rounded-sm text-white"
+          >
+            Video Demo
+          </button>
+          {vidOne && (
+            <video
+              preload="metadata"
+              className="mt-4"
+              width="300"
+              height="auto"
+              controls
+            >
+              <source src="/skillspace/preview.mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
       </Card>
 
@@ -94,11 +113,26 @@ export default function Projects({
           "Heroku",
           "Web Sockets",
         ])}
-        <div className="mt-6 flex justify-center">
-          {/* <video preload="metadata" width="100%" height="auto" controls>
-            <source src="/crewly/preview.mp4" />
-            Your browser does not support the video tag.
-          </video> */}
+
+        <div className="mt-6 flex flex-col items-center">
+          <button
+            onClick={() => setVidTwo((pv) => !pv)}
+            className="bg-brand hover:bg-brand/90 transition-colors px-4 py-2 w-full rounded-sm text-white"
+          >
+            Video Demo
+          </button>
+          {vidTwo && (
+            <video
+              preload="metadata"
+              className="mt-4"
+              width="100%"
+              height="auto"
+              controls
+            >
+              <source src="/crewly/preview.mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
       </Card>
 
@@ -120,11 +154,25 @@ export default function Projects({
           "Express",
           "Web Audio",
         ])}
-        <div className="mt-6 flex justify-center">
-          {/* <video preload="metadata" width="100%" height="auto" controls>
-            <source src="/wips/preview.mp4" />
-            Your browser does not support the video tag.
-          </video> */}
+        <div className="mt-6 flex flex-col items-center">
+          <button
+            onClick={() => setVidThree((pv) => !pv)}
+            className="bg-brand hover:bg-brand/90 transition-colors px-4 py-2 w-full rounded-sm text-white"
+          >
+            Video Demo
+          </button>
+          {vidThree && (
+            <video
+              preload="metadata"
+              className="mt-4"
+              width="100%"
+              height="auto"
+              controls
+            >
+              <source src="/wips/preview.mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
       </Card>
     </section>
