@@ -68,7 +68,7 @@ export default function Projects({
           "Serverless",
         ])}
         <div className="mt-6 flex justify-center">
-          <video width="300" height="auto" controls>
+          <video preload="metadata" width="300" height="auto" controls>
             <source src="/skillspace/preview.mp4" />
             Your browser does not support the video tag.
           </video>
@@ -95,7 +95,7 @@ export default function Projects({
           "Web Sockets",
         ])}
         <div className="mt-6 flex justify-center">
-          <video width="100%" height="auto" controls>
+          <video preload="metadata" width="100%" height="auto" controls>
             <source src="/crewly/preview.mp4" />
             Your browser does not support the video tag.
           </video>
@@ -121,7 +121,7 @@ export default function Projects({
           "Web Audio",
         ])}
         <div className="mt-6 flex justify-center">
-          <video width="100%" height="auto" controls>
+          <video preload="metadata" width="100%" height="auto" controls>
             <source src="/wips/preview.mp4" />
             Your browser does not support the video tag.
           </video>
