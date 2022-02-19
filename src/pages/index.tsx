@@ -1,11 +1,12 @@
-import Right from "../components/right/Right";
+import Clouds from "../components/effects/Clouds";
 import Stars from "../components/effects/Stars";
+import Waves from "../components/effects/Waves";
+import Right from "../components/right/Right";
+import Moon from "../components/effects/Moon";
 import Left from "../components/left/Left";
 import type { NextPage } from "next";
 import { useState } from "react";
 import Head from "next/head";
-import Waves from "../components/effects/Waves";
-import Clouds from "../components/effects/Clouds";
 
 const Home: NextPage = () => {
   const [section, setSection] = useState("work");
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Moon />
       <Clouds />
       <Stars />
       <Waves />

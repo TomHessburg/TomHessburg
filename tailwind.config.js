@@ -14,6 +14,7 @@ module.exports = {
         midnightBlack: "#0D0D0D",
         dusty: "#181818",
         brand: "#524fe3",
+        moon: "#F7F7FF",
       },
       fontFamily: {
         sans: ["Gothic A1", ...defaultTheme.fontFamily.sans],
